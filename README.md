@@ -36,3 +36,9 @@
     npm i
     npm run dev
     ```
+
+# Deployment to Render.com
+
+- Provision a Postgres database, deploy the web service, set `POSTGRES_URL` env variable.
+
+- The build command in Render.com should be `./scripts/build.sh`
