@@ -1,4 +1,4 @@
-# Postgres DevContainer
+# Full-Stack Starter
 
 ## Requirements
 
