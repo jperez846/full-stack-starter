@@ -37,7 +37,7 @@
     npm run dev
     ```
 
-# Deployment to Render.com
+## Deployment to Render.com
 
 - Provision a Postgres database, deploy the web service, set `POSTGRES_URL` env variable in Render.com.
 
