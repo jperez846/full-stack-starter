@@ -11,13 +11,17 @@ server.use(helmet())
 
 server.use(express.static(path.join(__dirname, '../', 'frontend', 'dist')))
 
-server.get('/', async (req, res, next) => {
+server.get('/api/friends', async (req, res, next) => {
   try {
-    const friends = await prisma.Board.findMany()
+    const friends = await prisma.Friend.findMany()
     res.json(friends)
   } catch (err) {
     next(err)
   }
+})
+
+server.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, '../frontend/dist/index.html'))
 })
 
 server.use((err, req, res, next) => {

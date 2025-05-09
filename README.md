@@ -1,5 +1,13 @@
 # Postgres DevContainer
 
+## Requirements
+
+1. WSL 2 (Windows)
+1. Docker Desktop (MacOS & Windows)
+1. Dev Containers extension for VSCode
+
+## Development
+
 1. Create an `.env` file and place it inside the `.devcontainer` folder.
 
     ```text
@@ -11,4 +19,20 @@
 
     Replace `ladygaga`, `gagadb`, and `1234` with desired values.
 
-2. Reopen the project in a dev container.
+2. Reopen the project in a Dev Container using VSCode.
+
+3. Run the project inside your Dev Container.
+
+    ```bash
+    # API
+    npm i
+    npm run db:setup
+    npm run dev
+    ```
+
+    ```bash
+    # SPA
+    cd frontend
+    npm i
+    npm run dev
+    ```
