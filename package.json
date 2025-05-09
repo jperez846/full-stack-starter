@@ -1,0 +1,33 @@
+{
+  "name": "full-stack-starter",
+  "version": "0.0.1",
+  "author": "Gabriel Cabrejas",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Ladrillo/full-stack-starter.git"
+  },
+  "scripts": {
+    "dev": "node --env-file=.devcontainer/.env --watch index.js",
+    "start": "node index.js",
+    "postinstall": "node scripts/postinstall.js",
+    "db:generate": "prisma generate",
+    "db:migrate": "prisma migrate dev --name init --skip-generate",
+    "db:init": "prisma migrate dev --name init --skip-generate",
+    "db:reset": "prisma migrate reset --force --skip-seed --skip-generate",
+    "db:setup": "npm run db:reset && npm run db:migrate && npm run db:generate && npm run db:seed",
+    "db:seed": "node prisma/seed.js",
+    "psql": "sh scripts/psql.sh"
+  },
+  "prisma": {
+    "seed": "node prisma/seed.js"
+  },
+  "dependencies": {
+    "@prisma/client": "^6.7.0",
+    "express": "^4.21.2",
+    "helmet": "^8.1.0",
+    "yup": "^1.6.1"
+  },
+  "devDependencies": {
+    "prisma": "^6.7.0"
+  }
+}
