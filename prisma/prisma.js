@@ -1,3 +1,4 @@
+// This module avoids creating multiple connections during dev and frequent restarts
 const { PrismaClient } = require('@prisma/client')
 
 const globalForPrisma = global
