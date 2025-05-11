@@ -1,3 +1,12 @@
+/* 
+  Josh Comeau’s Custom CSS Reset
+  Source: https://www.joshwcomeau.com/css/custom-css-reset/
+  Author: Josh W. Comeau (https://www.joshwcomeau.com)
+
+  This reset provides a modern baseline for CSS styling, 
+  improving consistency across browsers without removing useful defaults.
+*/
+
 /* 1. Use a more-intuitive box-sizing model */
 *, *::before, *::after {
   box-sizing: border-box;
