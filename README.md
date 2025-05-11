@@ -41,6 +41,6 @@ Enable **host networking** in Docker Settings / Rersources, for easy development
 
 ## Deployment to Render.com
 
-- Provision a Postgres database, deploy the web service, set `POSTGRES_URL` env variable in Render.com.
+- Provision a Postgres database, deploy the web service to Render, set `POSTGRES_URL` env variable.
 
 - The build command in Render.com should be `./scripts/build.sh`
