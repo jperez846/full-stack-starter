@@ -3,8 +3,6 @@ const express = require('express')
 const helmet = require('helmet')
 const prisma = require('../prisma/prisma')
 
-// Right now only same-origin requests from browser are allowed
-
 const server = express()
 
 server.use(express.json())
