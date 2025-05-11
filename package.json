@@ -6,6 +6,7 @@
     "type": "git",
     "url": "https://github.com/Ladrillo/full-stack-starter.git"
   },
+  "license": "MIT",
   "scripts": {
     "dev": "node --env-file=.devcontainer/.env --watch index.js",
     "start": "node index.js",

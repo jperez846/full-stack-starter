@@ -1,5 +1,7 @@
 # Full-Stack Starter
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 ## Requirements
 
 1. WSL 2 (Windows)
