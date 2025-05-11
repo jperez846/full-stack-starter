@@ -13,13 +13,13 @@ Enable **host networking** in Docker Settings / Rersources, for easy development
 1. Create an `.env` file and place it inside the `.devcontainer` folder.
 
     ```text
-    POSTGRES_USER="ladygaga"
+    POSTGRES_USER="starter"
     POSTGRES_PASSWORD="1234"
-    POSTGRES_DB="gagadb"
-    POSTGRES_URL="postgresql://ladygaga:1234@postgres:5432/gagadb?schema=public"
+    POSTGRES_DB="starterdb"
+    POSTGRES_URL="postgresql://starter:1234@postgres:5432/starterdb?schema=public"
     ```
 
-    Replace `ladygaga`, `gagadb`, and `1234` with desired values.
+    Replace `starter`, `starterdb`, and `1234` with desired values.
 
 2. Reopen the project in a Dev Container using VSCode.
 
