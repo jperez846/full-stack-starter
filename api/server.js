@@ -9,7 +9,7 @@ const prisma = require('../prisma/prisma')
 const server = express()
 
 server.use(express.json())
-server.use(helmet()) // Very strict, will need adjustments for prod
+server.use(helmet()) // Pretty strict, might need adjustments for prod
 
 server.use(express.static(path.join(__dirname, '..', 'frontend', 'dist')))
 
