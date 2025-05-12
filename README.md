@@ -8,7 +8,7 @@
 1. Docker Desktop (MacOS & Windows)
 1. Dev Containers extension for VSCode
 
-Enable **host networking** in Docker Settings / Rersources, for easy development.
+Enable **host networking** in Docker Settings / Resources, for easy development.
 
 ## Development
 
