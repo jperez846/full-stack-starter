@@ -13,6 +13,7 @@ server.use(helmet()) // Pretty strict, might need adjustments for prod
 
 server.use(express.static(path.join(__dirname, '..', 'frontend', 'dist')))
 
+// API
 server.get('/api/friends', async (req, res, next) => {
   try {
     const friends = await prisma.Friend.findMany()
@@ -22,10 +23,12 @@ server.get('/api/friends', async (req, res, next) => {
   }
 })
 
+// SPA
 server.get('/*splat', (req, res) => { // In Express 5 '*' won't work
   res.sendFile(path.resolve(__dirname, '..', 'frontend', 'dist', 'index.html'))
 })
 
+// Error handler
 server.use((err, req, res, next) => {
   res.status(500).json(err.message)
 })
