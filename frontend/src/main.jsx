@@ -1,27 +1,42 @@
 import './reset.css'
 import './styles.css'
+
+import { useEffect, useState } from 'react';
 import { createRoot } from 'react-dom/client'
-import { useEffect, useState } from 'react'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import HomePage from './HomePage'
+import BoardDetailPage from './BoardDetailsPage'
+import Footer from './Footer';
+
 
 function App() {
-  const [data, setData] = useState(null)
+  const [theme, setTheme] = useState('light');
+
   useEffect(() => {
-    const getData = async () => {
-      const res = await fetch('/api/friends')
-      const parsed = await res.json()
-      setData(parsed)
-    }
-    getData()
-  },[])
+    document.documentElement.setAttribute('data-theme', theme);
+  }, [theme]);
+
+  const toggleTheme = () => {
+    setTheme((prev) => (prev === 'light' ? 'dark' : 'light'));
+  };
   return (
-    <div>
-      <h1>Full Stack Starter</h1>
-      <div>
-        { data && (
-          data.map(friend => <div key={friend.id}>{friend.name}</div>)
-        )}
+    <Router>
+      <header className="banner">
+        <h1 className="banner-title">Kudos</h1>
+        <button className="theme-toggle-btn" onClick={toggleTheme}>
+          Toggle {theme === 'light' ? 'Dark' : 'Light'} Mode
+        </button>
+      </header>
+
+      <div className="app-content">
+        <h2 className="welcome-text">Give Kudos 🎉</h2>
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/board/:id" element={<BoardDetailPage />} />
+        </Routes>
       </div>
-    </div>
+      <Footer></Footer>
+    </Router>
   )
 }
 

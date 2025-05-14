@@ -1,1 +1,63 @@
-/* Your styles here */
+:root {
+    --bg-color: #ffffff;
+    --text-color: #111111;
+    --card-bg: #f9f9f9;
+    --button-bg: #ececec;
+    --button-hover: #dcdcdc;
+  }
+  
+  [data-theme='dark'] {
+    --bg-color: #121212;
+    --text-color: #f0f0f0;
+    --card-bg: #1e1e1e;
+    --button-bg: #2a2a2a;
+    --button-hover: #3a3a3a;
+  }
+  
+  body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color 0.2s, color 0.2s;
+  }
+  .banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--banner-bg, linear-gradient(to right, #02AABD, #00CDAC));
+    color: white;
+    padding: 1rem 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 0 0 12px 12px;
+  }
+  
+  .banner-title {
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
+  
+  .theme-toggle-btn {
+    padding: 0.5rem 1rem;
+    background: white;
+    color: #4e54c8;
+    border: none;
+    border-radius: 6px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .theme-toggle-btn:hover {
+    background: #f0f0f0;
+  }
+  
+  .app-content {
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .welcome-text {
+    font-size: 1.8rem;
+    color: var(--text-color, #333);
+    margin-bottom: 2rem;
+  }

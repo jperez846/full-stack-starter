@@ -6,7 +6,7 @@
 
 generator client {
   provider = "prisma-client-js"
-  output   = "./node_modules/@prisma/client"
+  output   = "./node_modules/.prisma/client"
 }
 
 datasource db {
@@ -19,4 +19,36 @@ model Friend {
   name         String
   createdAt    DateTime @default(now())
   updatedAt    DateTime @updatedAt
+}
+
+model KudosBoard {
+  id        Int          @id @default(autoincrement())
+  title     String
+  gifUrl    String       @default("None")
+  createdAt DateTime     @default(now())
+  updatedAt DateTime     @updatedAt
+  category  String       @default("General")
+  author    String?      @default("Anonymous")
+  cards     KudosCard[]
+}
+
+model KudosCard {
+  id        Int         @id @default(autoincrement())
+  message   String
+  author    String?     @default("Anonymous")
+  gifUrl    String
+  upvotes   Int         @default(0)
+  createdAt DateTime    @default(now())
+  boardId   Int
+  board     KudosBoard  @relation(fields: [boardId], references: [id])
+  comments  KudosCardComment[]
+}
+
+model KudosCardComment {
+  id        Int        @id @default(autoincrement())
+  message   String
+  author    String?    @default("Anonymous")
+  createdAt DateTime   @default(now())
+  cardId    Int
+  card      KudosCard  @relation(fields: [cardId], references: [id])
 }
