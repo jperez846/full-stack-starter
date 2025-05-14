@@ -172,12 +172,13 @@ server.get('/api/boards/:id', async (req, res, next) => {
 server.post('/api/boards/:boardId/cards', async (req, res, next) => {
  
   const { boardId } = req.params
-  const { message, gifUrl } = req.body
+  const { message, gifUrl, author } = req.body
   try {
     const card = await prisma.kudosCard.create({
       data: {
         message,
         gifUrl,
+        author,
         board: { connect: { id: parseInt(boardId) } },
       },
     })
