@@ -3,6 +3,9 @@
 # Install express deps
 npm install
 
+npx prisma generate
+
+
 # Install react deps
 cd frontend && npm install --include=dev
 
