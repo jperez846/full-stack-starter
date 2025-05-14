@@ -89,6 +89,8 @@ const HomePage = () => {
 
         const res = await fetch(url + params.toString());
         const parsed = await res.json();
+       // console.log("KUDOS DATA!!: ");
+        //console.log(parsed)
         setKudosData(parsed);
     };
 
