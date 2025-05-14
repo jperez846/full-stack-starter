@@ -53,7 +53,7 @@ Enable **host networking** in Docker Settings / Resources, for easy development.
 
 Submitted by: **Jesus Perez**
 
-Deployed Application (**required**): [Kudos Board Deployed Site](ADD_LINK_HERE)
+Deployed Application (**required**): [Kudos Board Deployed Site](https://full-stack-starter.onrender.com)
 
 ### Application Features
 
@@ -186,9 +186,16 @@ Deployed Application (**required**): [Kudos Board Deployed Site](ADD_LINK_HERE)
 
 ### Walkthrough Video
 
-`TODO://` Add the embedded URL code to your animated app walkthrough below, `ADD_EMBEDDED_CODE_HERE`. Make sure the video or gif actually renders and animates when viewing this README. Ensure your walkthrough showcases the presence and/or functionality of all features you implemented above (check them off as you film!). Pay attention to any **VIDEO WALKTHROUGH SPECIAL INSTRUCTIONS** checkboxes listed above to ensure graders see the full functionality of your website! (🚫 Remove this paragraph after adding walkthrough video)
+`TODO://` Add the embedded URL code to your animated app walkthrough below. Make sure the video or gif actually renders and animates when viewing this README. Ensure your walkthrough showcases the presence and/or functionality of all features you implemented above (check them off as you film!). Pay attention to any **VIDEO WALKTHROUGH SPECIAL INSTRUCTIONS** checkboxes listed above to ensure graders see the full functionality of your website! (🚫 Remove this paragraph after adding walkthrough video)
 
-`ADD_EMBEDDED_CODE_HERE`
+First video goes over all functionality but deleting a board I have added a second video to highlight this !!
+
+FIRST:https://www.loom.com/share/1e3beda70fd848c7afc54cc9078c6b2f?sid=6cea4ebb-102a-4f14-9164-6f2dc204fb0a
+
+SECOND:
+https://www.loom.com/share/c0a1786855784cd5bcdd0782625170cd?sid=046d3cbb-4790-449c-b0ba-4305e77ee64d
+
+
 
 ### Reflection
 
