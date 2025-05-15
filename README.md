@@ -193,8 +193,7 @@ First video goes over all functionality but deleting a board I have added a seco
 FIRST:https://www.loom.com/share/1e3beda70fd848c7afc54cc9078c6b2f?sid=6cea4ebb-102a-4f14-9164-6f2dc204fb0a
 
 SECOND:
-https://www.loom.com/share/c0a1786855784cd5bcdd0782625170cd?sid=046d3cbb-4790-449c-b0ba-4305e77ee64d
-
+https://www.loom.com/share/c85ac809a8ac47e98a80868d059c2c97?sid=1e5c7c7a-f394-4419-aad7-6c8e9b598b7a
 
 
 ### Reflection
